@@ -1,6 +1,10 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from "next/head";
+import { useEffect } from "react";
 import ReactGA from "react-ga";
+
+ReactGA.initialize("G-XL0DVX6ZDL");
+
 export default function Layout({
     title,
     keywords,
@@ -8,7 +12,9 @@ export default function Layout({
     author,
     children,
 }) {
-    ReactGA.initialize("G-XL0DVX6ZDL");
+    useEffect(() => {
+        ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
     return (
         <div>
             <Head>

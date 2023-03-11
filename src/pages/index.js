@@ -6,7 +6,7 @@ const converter = new showdown.Converter();
 
 export default function Home() {
     const [userInput, setUserInput] = useState("");
-    const [apiOutput, setApiOutput] = useState("You will see output here");
+    const [apiOutput, setApiOutput] = useState("结果将在这里输出……");
     const [inputError, setInputError] = useState("");
     const [loading, setLoading] = useState(false);
 
@@ -18,7 +18,7 @@ export default function Home() {
     const callGenerateEndpoint = async () => {
         setInputError("");
         if (userInput !== "") {
-            setApiOutput(`Please Wait ....`);
+            setApiOutput(`请耐心等待……`);
             setLoading(true);
             const response = await fetch("/api/coder", {
                 method: "POST",
@@ -29,17 +29,16 @@ export default function Home() {
             });
 
             const data = await response.json();
-            console.log(data);
             const output = data.output.message;
 
-            const formattedText = output.content.replace(/\n/g, "<br>");
+            const formattedText = output.content;
             const sanitizedOutput = sanitizeHtml(
                 converter.makeHtml(formattedText)
             );
             setLoading(false);
             setApiOutput(`${sanitizedOutput}`);
         } else {
-            setInputError("请输入需要实现的代码");
+            setInputError("请输入需要实现的功能");
         }
     };
 
