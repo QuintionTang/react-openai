@@ -2,9 +2,15 @@
 
 一个基于 React、Next.js 的实验性学习项目，用于尝试对接 OPENAI 接口。
 
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+> 由于是免费的账户，额度只有 `$5`。
+
+体验地址：https://experimental.crayon.dev/
+
+![priview](./readme/preview.jpg)
 
 ## Getting Started
+
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 First, run the development server:
 
