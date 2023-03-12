@@ -41,11 +41,21 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Deploy on Docker
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+使用 Docker 进行部署，首先构建 Docker 镜像：
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+docker image build -t react-openai -f Dockerfile .
+```
+
+构建完成之后，使用 Docker 进行运行：
+
+```
+docker run --env OPENAI_API_KEY="API KEY" --restart always -p 3000:3000 -d react-openai
+```
+
+在本地输入 `localhost:3000` 即可访问
 
 ## 自媒体
 
