@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-page-custom-font */
 import Head from "next/head";
 import { useEffect } from "react";
-import ReactGA from "react-ga";
+import TagManager from "react-gtm-module";
 
-ReactGA.initialize("G-XL0DVX6ZDL");
+const tagManagerArgs = {
+    gtmId: "G-XL0DVX6ZDL",
+};
 
 export default function Layout({
     title,
@@ -13,7 +15,7 @@ export default function Layout({
     children,
 }) {
     useEffect(() => {
-        ReactGA.pageview(window.location.pathname + window.location.search);
+        TagManager.initialize(tagManagerArgs);
     }, []);
     return (
         <div>
