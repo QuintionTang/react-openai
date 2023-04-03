@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "lightImage": "/images/clients/brands/light/01.png",
+        "darkImage": "/images/clients/brands/dark/01.png",
+        "url": "www.Vie.com"
+    },
+    {
+        "id": 2,
+        "lightImage": "/images/clients/brands/light/02.png",
+        "darkImage": "/images/clients/brands/dark/02.png",
+        "url": "www.Vie.com"
+    },
+    {
+        "id": 3,
+        "lightImage": "/images/clients/brands/light/03.png",
+        "darkImage": "/images/clients/brands/dark/03.png",
+        "url": "www.Vie.com"
+    },
+    {
+        "id": 4,
+        "lightImage": "/images/clients/brands/light/04.png",
+        "darkImage": "/images/clients/brands/dark/04.png",
+        "url": "www.Vie.com"
+    },
+    {
+        "id": 5,
+        "lightImage": "/images/clients/brands/light/05.png",
+        "darkImage": "/images/clients/brands/dark/05.png",
+        "url": "www.Vie.com"
+    },
+    {
+        "id": 6,
+        "lightImage": "/images/clients/brands/light/06.png",
+        "darkImage": "/images/clients/brands/dark/06.png",
+        "url": "www.Vie.com"
+    },
+    {
+        "id": 7,
+        "lightImage": "/images/clients/brands/light/07.png",
+        "darkImage": "/images/clients/brands/dark/07.png",
+        "url": "www.Vie.com"
+    },
+    {
+        "id": 8,
+        "lightImage": "/images/clients/brands/light/08.png",
+        "darkImage": "/images/clients/brands/dark/08.png",
+        "url": "www.Vie.com"
+    }
+]

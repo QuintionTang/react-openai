@@ -1,0 +1,15 @@
+{
+    "id": 1,
+    "image1": "/images/01.webp",
+    "image2": "/images/02.webp",
+    "exp": {
+        "nmb": 28,
+        "name": "Years Of Experience"
+    },
+    "title": "Chat completions",
+    "content": {
+        "first": "This guide explains how to make an API call for chat-based language models and shares tips for getting good results. ",
+        "second": "You can also experiment with the new chat format in the OpenAI Playground."
+    },
+    "smallTitle": "Try It"
+}

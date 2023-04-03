@@ -21,9 +21,13 @@
         "react": "18.2.0",
         "react-dom": "18.2.0",
         "react-gtm-module": "^2.0.11",
+        "react-modal-video": "^2.0.0",
+        "react-slick": "^0.29.0",
+        "react-tsparticles": "^1.37.4",
         "sanitize-html": "^2.10.0",
         "sass": "^1.58.3",
-        "showdown": "^2.1.0"
+        "showdown": "^2.1.0",
+        "slick-carousel": "^1.8.1"
     },
     "repository": {
         "type": "git",
